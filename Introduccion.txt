@@ -1,0 +1,111 @@
+Ciclo de vida de Objetos de entidad
+
+get()
+load()
+find()
+iterate()
+etc...
+
+
+o------>Creacion nuevo objeto    ---->  Transitivo(Transient)  -----> Basura (garbage)
+
+|                                              |        |                       |
+|           save()                             |        |                       |
+|           saveOrUpdate()                     v        v                       v
+|
+|
+|------------------------------------->    Persistido
+                                            (Persistent)                        o
+                                                |       ^
+                evict()                         |       |   update()        Basura (garbage)
+                close() *                       |       |   saveOrUpdate()      ^
+                clear() *                       v       |   lock()              |
+                                                                                |
+                                                Separado                        |
+                                                (Deteched)----------------------
+*Afecta a todas las instancias
+que estan en la Sesion actual
+
+
+Algunos estados de los objetos de entidad
+
+Estado Transitivo(Transient)
+
+-Los objetos de entidad nuevos No son guardados directamente en la Base de datos(BD).
+-No estan asociados con un registro BD.
+-Se consideran No Transicionales.
+
+Estado Persistente(Persistent):
+- Un objeto persistente tiene asociado un registro en BD.
+-Los objetos persistentes siempre estan asociados con una sesion y son transaccionales. Su 
+estado se sincroniza con la BD al terminar la transaccion.
+
+Estado Separado(Detached):
+- Estos objetostienen asociado un registro de BD, pero su estado no esta sincronizado con la BD.
+
+Persistir un objeto en hibernate/JPA:
+
+1. Crear nuevo objeto.
+Entity e  --> T/transient
+2. Inicia la transaccion.
+                Session
+            (Contexto Persistente)
+--->save(e)---->P/Persistent----> flush() --->close() --->D/Detached
+    3. Ejecuta SQL               4. commit/rollback
+
+
+    Recuperar un objeto en hibernate/JPA
+1.Inicia transaccion
+
+            Session                 3. termina transaccion
+    (Contexto Persistente)
+--->save(e)---->P/Persistent----> close()---->D/Detached
+2.Ejecuta SQL
+
+
+Modificar un objeto en hibernate
+1.Inicia transaccion
+                    Session
+            (Contexto Persistente)            3. termina transaccion
+get(id)---->P/Persistent----> flush() --->close() --->D/Detached
+2.Ejecuta SQL                                                   |
+                                                                |
+                                                                v
+                                                                Entity e
+                                                                4. setValue(nuevoValor)
+5. Inicia transaccion Inicia                    7. Termina trasaccion II.
+
+
+update(e)---->P/Persistent----> flush() --->close() --->D/Detached
+
+6. Ejecuta SQL
+
+Modificar un objeto sesion larga:
+
+1.Inicia transaccion
+                    Session
+            (Contexto Persistente)            4. termina transaccion
+get(id)---->P/Persistent----> Entity e ---->flush() --->close() --->D/Detached
+2.Ejecuta SQL                 3. setValue(nuevoValor)
+                                                    No se Ejecuta automaticamente  hay que hacer commit
+
+
+Eliminar un objeto en hibernate/JPA
+
+1.Inicia transaccion I
+                    Session
+            (Contexto Persistente)            3. termina transaccion
+get(id)---->P/Persistent----> flush() --->close() --->D/Detached
+2.Ejecuta SQL                                                   |
+                                                                |
+                                                                v
+                                                                Entity e
+
+4. Inicia transaccion II                    6.Termina trasaccion II                                     
+                    Session
+            (Contexto Persistente)  
+delete(e)---->P/Persistent----> flush() --->close() --->T/transient
+5.Ejecuta SQL
+
+
+
