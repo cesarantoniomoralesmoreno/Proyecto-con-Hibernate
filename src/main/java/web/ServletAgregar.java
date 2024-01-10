@@ -44,7 +44,7 @@ public class ServletAgregar extends HttpServlet {
         Alumno alumno = new Alumno();
         
         alumno.setNombre(nombre);
-        alumno.setApellido(nombre);
+        alumno.setApellido(apellido);
         alumno.setDomicilio(domicilio);
         alumno.setContacto(contacto);
 

@@ -1,22 +1,22 @@
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\domain\Contacto.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\domain\Curso.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\dao\GenericDAO.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\domain\Domicilio.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\web\ServletControlador.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\web\ServletModificar.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\cicloVida\Estado2RecuperarObjetoPersistente.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\domain\Alumno.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\servicio\ServicioAlumno.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\dao\AlumnoDAO.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\dao\AsignacionDAO.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\web\ServletRedireccionar.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\dao\DomicilioDAO.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\web\cascade\PersistenciaCascadaTest.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\dao\ContactoDAO.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\domain\Asignacion.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\web\testDAOs.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\dao\CursoDAO.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\web\ServletAgregar.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\cicloVida\Estado1Persistido.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\cicloVida\Estado3ModificarObjetoPersistente.java
-f:\algoritmos\hibernate\SgaWebHibernateJPA Proyecto final\src\main\java\cicloVida\Estado4EliminarObjetoPersistente.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\dao\CursoDAO.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\dao\GenericDAO.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\servicio\ServicioAlumno.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\web\ServletAgregar.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\cicloVida\Estado3ModificarObjetoPersistente.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\dao\ContactoDAO.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\web\testDAOs.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\web\ServletRedireccionar.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\web\ServletModificar.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\domain\Domicilio.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\domain\Curso.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\dao\DomicilioDAO.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\dao\AlumnoDAO.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\dao\AsignacionDAO.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\cicloVida\Estado1Persistido.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\domain\Asignacion.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\web\ServletControlador.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\cicloVida\Estado4EliminarObjetoPersistente.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\cicloVida\Estado2RecuperarObjetoPersistente.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\web\cascade\PersistenciaCascadaTest.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\domain\Contacto.java
+c:\Users\leo\Documents\algoritmos\hibernate\SgaWebHibernateJPA-Proyecto-final\src\main\java\domain\Alumno.java
